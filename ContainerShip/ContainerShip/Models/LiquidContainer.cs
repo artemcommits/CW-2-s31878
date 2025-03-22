@@ -4,7 +4,7 @@ namespace ContainerShip.Models
 {
     using System;
 
-    public class LiquidContainer : Container, IHazardNotifier
+    public class LiquidContainer : Container, HazardNotifier
     {
         private readonly bool isHazardous;
 

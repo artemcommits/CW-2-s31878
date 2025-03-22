@@ -1,6 +1,6 @@
 ﻿namespace ContainerShip.Models
 {
-    public interface IHazardNotifier
+    public interface HazardNotifier
     {
         void NotifyHazard(string message);
     }

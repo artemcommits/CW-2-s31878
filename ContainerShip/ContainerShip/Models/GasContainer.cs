@@ -2,7 +2,7 @@
 
 namespace ContainerShip.Models
 {
-    public class GasContainer : Container, IHazardNotifier
+    public class GasContainer : Container, HazardNotifier
     {
         public double Pressure { get; }
 

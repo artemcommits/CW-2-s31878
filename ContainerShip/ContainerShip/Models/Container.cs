@@ -6,6 +6,7 @@ namespace ContainerShip.Models
 
     public abstract class Container
     {
+
         private static int counter = 1;
         public string SerialNumber { get; }
         public double LoadMass { get; set; }
@@ -26,6 +27,8 @@ namespace ContainerShip.Models
 
         protected abstract string GetContainerType();
 
+
+
         public virtual void Load(double mass)
         {
             if (LoadMass + mass > MaxLoadCapacity)
@@ -38,6 +41,8 @@ namespace ContainerShip.Models
         {
             LoadMass = 0;
         }
+
+
 
         public override string ToString()
         {
