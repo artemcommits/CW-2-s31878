@@ -41,10 +41,21 @@ class Program
         gasContainer1.Load(4600);
         fridge1.Load(3800);
 
+
+        gasContainer1.Unload();
+
+        
+
+
+
         ship1.LoadContainer(liquidSafe1);
         ship1.LoadContainer(liquidDanger1);
         ship1.LoadContainer(gasContainer1);
         ship1.LoadContainer(fridge1);
+
+
+        ship1.UnloadContainer(liquidDanger1.SerialNumber);
+
 
         ship1.DisplayContainers();
     }
